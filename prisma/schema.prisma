@@ -48,6 +48,7 @@ model User {
   clinic    Clinic?  @relation(fields: [clinicId], references: [id])
 
   patient   Patient?
+  appointments Appointment[]
 }
 
 model Clinic {
